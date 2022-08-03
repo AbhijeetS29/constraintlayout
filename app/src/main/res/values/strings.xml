@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">constraintlayout</string>
+    <string name="sateliite">Satellite</string>
+    <string name="aeroplne">Aeroplane</string>
+    <string name="bluetooth">Bluetooth</string>
+    <string name="layout">Constraint</string>
+</resources>

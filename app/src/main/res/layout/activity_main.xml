@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+ <androidx.constraintlayout.widget.Guideline
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:orientation="vertical"
+     android:id="@+id/guide_v_10"
+     app:layout_constraintGuide_percent="0.10"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/guide_v_90"
+        app:layout_constraintGuide_percent="0.90" />
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/guide_h_10"
+        app:layout_constraintGuide_percent=".10"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/guide_v_35"
+        app:layout_constraintGuide_percent=".38"/>
+   <androidx.constraintlayout.widget.Guideline
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/guide_v_3"
+       android:orientation="vertical"
+       app:layout_constraintGuide_percent=".62"/>
+   <androidx.constraintlayout.widget.Guideline
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:id="@+id/guide_h_25"
+       app:layout_constraintGuide_percent=".25"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/guide_h_"
+        app:layout_constraintGuide_percent=".50"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/guide_h_60"
+        app:layout_constraintGuide_percent=".60"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/guide_h_70"
+        app:layout_constraintGuide_percent=".70"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent=".90"
+        android:orientation="horizontal"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent=".50"
+        android:id="@+id/guide_V_50"
+        android:orientation="vertical"/>
+
+    <ImageView
+       android:layout_width="81dp"
+       android:layout_height="81dp"
+        android:id="@+id/ivbluetooth"
+       android:src="@drawable/ic_baseline_bluetooth_audio_24"
+       app:layout_constraintLeft_toRightOf="@id/guide_v_3"
+       app:layout_constraintTop_toBottomOf="@id/guide_h_10"
+       app:layout_constraintRight_toLeftOf="@id/guide_v_90" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sateliite"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/ivsatellite"
+        app:layout_constraintLeft_toRightOf="@id/guide_v_10"
+        app:layout_constraintRight_toLeftOf="@id/guide_v_35"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="@string/aeroplne"
+        app:layout_constraintTop_toBottomOf="@id/ivaeroplane"
+        app:layout_constraintLeft_toRightOf="@id/guide_v_35"
+        app:layout_constraintRight_toLeftOf="@id/guide_v_3"/>
+
+
+    <TextView
+        android:layout_width="119dp"
+        android:layout_height="155dp"
+
+
+        android:background="@color/teal_700"
+        android:text="MARS"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@id/guide_h_"
+        app:layout_constraintLeft_toRightOf="@id/guide_V_50"
+        app:layout_constraintRight_toLeftOf="@id/guide_v_90"
+        app:layout_constraintTop_toBottomOf="@id/guide_h_25" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bluetooth"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/ivbluetooth"
+        app:layout_constraintLeft_toRightOf="@id/guide_v_3"
+        app:layout_constraintRight_toLeftOf="@id/guide_v_90"/>
+
+    <TextView
+        android:layout_width="126dp"
+        android:layout_height="155dp"
+android:id="@+id/tvphone3"
+        android:background="@color/teal_700"
+        android:text="PHONE CALL"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@id/guide_h_"
+        app:layout_constraintLeft_toRightOf="@id/guide_v_10"
+        app:layout_constraintRight_toLeftOf="@id/guide_V_50"
+        app:layout_constraintTop_toBottomOf="@id/guide_h_25" />
+
+    <ImageView
+        android:layout_width="81dp"
+        android:layout_height="81dp"
+        android:id="@+id/ivaeroplane"
+        android:src="@drawable/ic_baseline_airplanemode_active_24"
+        app:layout_constraintLeft_toRightOf="@id/guide_v_35"
+        app:layout_constraintTop_toBottomOf="@id/guide_h_10"
+        app:layout_constraintRight_toLeftOf="@id/guide_v_3"/>
+
+    <ImageView
+        android:layout_width="81dp"
+        android:layout_height="81dp"
+        android:id="@+id/ivsatellite"
+        android:src="@drawable/ic_baseline_satellite_24"
+        app:layout_constraintLeft_toRightOf="@id/guide_v_10"
+        app:layout_constraintTop_toBottomOf="@id/guide_h_10"
+        app:layout_constraintRight_toLeftOf="@id/guide_v_35" />
+
+    <ImageView
+        android:layout_width="106dp"
+        android:layout_height="85dp"
+        android:src="@drawable/ic_baseline_email_24"
+        app:layout_constraintLeft_toRightOf="@id/guide_v_35"
+        app:layout_constraintRight_toLeftOf="@id/guide_v_3"
+        app:layout_constraintTop_toBottomOf="@id/guide_h_25"
+        app:layout_constraintBottom_toTopOf="@id/guide_h_"/>
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:text="ON/OFF"
+        android:background="@color/purple_200"
+         app:layout_constraintLeft_toRightOf="@id/guide_v_10"
+        app:layout_constraintTop_toBottomOf="@id/guide_h_"
+        app:layout_constraintBottom_toTopOf="@id/guide_h_60"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/layout"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:background="@color/purple_200"
+        app:layout_constraintTop_toBottomOf="@id/guide_h_60"
+        app:layout_constraintLeft_toRightOf="@id/guide_v_10"
+
+        app:layout_constraintBottom_toTopOf="@id/guide_h_70"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
